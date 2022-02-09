@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #066acd;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+}
+
+/*Button ADD*/
+#newtask button{
+    position: relative;
+    width: 20%;
+    height: 45px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    border: none;
+    color: #ffffff;
+    outline: none;
+}
+
+#tasks{
+    padding: 20px 20px;
+    margin-top: 5px;
+    width: 100%;
+    position: relative;
+}
+
+#tittle{
+    font-family: 'Poppins', 'verdana';
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+    color: #5ddcf2;
+}
+
+.task{
+    background-color: #5ddcf2;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f05337;
+    cursor: pointer;
+}
+
+.task p{
+    font-family: 'Poppins', 'verdana';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+/*Button DELETE*/
+.task button{
+    height: 100%;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
